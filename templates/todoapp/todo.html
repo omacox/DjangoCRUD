@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Add Todo</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Add Todo</button>
+    </form>
+
+    <h2 class="mt-4">Todo List</h2>
+    <ul class="list-group">
+        {% for todo in todos %}
+        <li class="list-group-item">
+            {{ todo.title }}
+            <!-- Add more todo fields as needed -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
