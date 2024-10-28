@@ -36,35 +36,15 @@ python manage.py migrate
 │       ├── show.html
 │       └── todo.html
 ├── todoapp
-│   ├── __init__.py
-│   ├── __pycache__
-│   │   ├── __init__.cpython-311.pyc
-│   │   ├── admin.cpython-311.pyc
-│   │   ├── apps.cpython-311.pyc
-│   │   ├── forms.cpython-311.pyc
-│   │   ├── models.cpython-311.pyc
-│   │   ├── urls.cpython-311.pyc
-│   │   └── views.cpython-311.pyc
 │   ├── admin.py
 │   ├── apps.py
 │   ├── forms.py
 │   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   │       ├── 0001_initial.cpython-311.pyc
-│   │       └── __init__.cpython-311.pyc
 │   ├── models.py
 │   ├── tests.py
 │   ├── urls.py
 │   └── views.py
 └── todoproject
-    ├── __init__.py
-    ├── __pycache__
-    │   ├── __init__.cpython-311.pyc
-    │   ├── settings.cpython-311.pyc
-    │   ├── urls.cpython-311.pyc
-    │   └── wsgi.cpython-311.pyc
     ├── asgi.py
     ├── settings.py
     ├── urls.py
@@ -106,6 +86,8 @@ python manage.py createsuperuser
 
 python manage.py makemigrations
 python manage.py migrate
-
+python manage.py runserver  
 
 ```
+
+- mainuser - newpassword12
